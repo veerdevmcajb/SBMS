@@ -1,0 +1,29 @@
+package in.veerdev.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import in.veerdev.dao.StudentDao;
+import in.veerdev.dto.Student;
+
+public class MainApp {
+	
+	public static void main(String[] args) {
+		
+		ApplicationContext cotext = new AnnotationConfigApplicationContext("AppConfig.class");
+		
+		StudentDao bean = cotext.getBean(StudentDao.class);
+		
+		Student s = new Student();
+		s.setId(101);
+		s.setName("Veer");
+		s.setCity("Nanded");
+		
+		bean.save(s);
+		
+		System.out.println("Data inserted...");
+		
+		
+	}
+
+}

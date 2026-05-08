@@ -1,0 +1,13 @@
+package in.veerdev.beans;
+
+import org.springframework.stereotype.Service;
+
+@Service("payment")
+public class CreditCardPayment implements IPayment{
+	
+	@Override
+	public boolean doPayment(double amt) {
+			System.out.println("CRedit Card Payment Completed");
+		return true;
+	}
+}

@@ -1,0 +1,26 @@
+package in.veerdev.main;
+
+import org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import in.veerdev.beans.Motor;
+import in.veerdev.config.AppConfig;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		
+	ApplicationContext ctxt = new AnnotationConfigApplicationContext(AppConfig.class);
+	
+	Motor m1 = ctxt.getBean(Motor.class);
+	m1.doWork();
+	System.out.println(m1.hashCode());
+	
+	ConfigurableApplicationContext confctxt = (ConfigurableApplicationContext)ctxt;
+	
+	confctxt.close();
+		
+	}
+}

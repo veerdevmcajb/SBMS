@@ -1,0 +1,12 @@
+package com.in;
+
+public class PassWrdServiceImpl implements IpwdService {
+
+	@Override
+	public String generateRandomPass(int length) {
+		
+		
+		
+		return "H68HA45";
+	}
+}

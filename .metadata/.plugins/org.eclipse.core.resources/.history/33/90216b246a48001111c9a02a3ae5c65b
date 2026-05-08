@@ -1,0 +1,14 @@
+package in.veerdev.beans;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class DebitCardPayment implements IPayment{
+
+	@Override
+	public boolean doPayment(double amt) {
+		System.out.println("Debit Card Payment Completed");
+		// TODO Auto-generated method stub
+		return true;
+	}
+}

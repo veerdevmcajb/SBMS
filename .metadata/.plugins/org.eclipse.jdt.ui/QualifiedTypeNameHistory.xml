@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Void"/>
+    <fullyQualifiedTypeName name="com.in.IpwdService"/>
+    <fullyQualifiedTypeName name="com.in.IEmailService"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.ClassPathBeanDefinitionScanner"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider"/>
+    <fullyQualifiedTypeName name="in.veerdev.service.UserService"/>
+    <fullyQualifiedTypeName name="in.veerdev.config.AppConfig"/>
+    <fullyQualifiedTypeName name="in.veerdev.config.AppSecurity"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="com.veerdev.dao.IUserDao"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="com.veerdev.service.UserService"/>
+    <fullyQualifiedTypeName name="com.veerdev.config.AppConfig"/>
+    <fullyQualifiedTypeName name="io.micrometer.observation.Observation.Context"/>
+    <fullyQualifiedTypeName name="in.veerdev.beans.IPayment"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotatedBeanDefinitionReader"/>
+    <fullyQualifiedTypeName name="in.veerdev.beans.ShoppingCart"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator"/>
+    <fullyQualifiedTypeName name="java.awt.desktop.AppReopenedListener"/>
+    <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+    <fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ConfigurableApplicationContext"/>
+    <fullyQualifiedTypeName name="in.veerdev.beans.Motor"/>
+    <fullyQualifiedTypeName name="com.beans.IEngine"/>
+    <fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.core.io.Resource"/>
+    <fullyQualifiedTypeName name="org.springframework.core.io.ClassPathResource"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
+    <fullyQualifiedTypeName name="org.springframework.cglib.proxy.Factory"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.jdbc.datasource.DriverManagerDataSource"/>
+    <fullyQualifiedTypeName name="javax.sql.DataSource"/>
+    <fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.protocol.Resultset.Concurrency"/>
+    <fullyQualifiedTypeName name="in.veerdev.dto.Student"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+</qualifiedTypeNameHistroy>

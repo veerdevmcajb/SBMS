@@ -1,0 +1,5 @@
+package com.veerdev.dao;
+
+public interface IUserDao {
+
+}

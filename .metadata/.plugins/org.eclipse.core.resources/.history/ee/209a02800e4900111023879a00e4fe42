@@ -1,0 +1,23 @@
+package in.veerdev.beans;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class Motor {
+
+	public Motor() {
+		System.out.println("Motor :: COnstructor");
+	}
+	
+	public void start() {
+		System.out.println("Motor started..");
+	}
+	
+	public void doWork() {
+		System.out.println("Motor Working...");
+	}
+	
+	public void stop() {
+		System.out.println("Motor Stop...");
+	}
+}

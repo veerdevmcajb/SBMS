@@ -1,0 +1,24 @@
+package in.veerdev.beans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ShoppingCart {
+
+	@Autowired
+	@Qualifier("debit")
+	private IPayment payment;
+	
+	public void placeOrder() {
+		
+		boolean doPayment= payment.doPayment(110);
+		
+		if(doPayment) {
+			System.out.println("Order placed Successfully");
+		}else {
+			System.out.println("Order Failed ");
+		}
+	}
+}

@@ -1,0 +1,11 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="emp1" class="in.veerdev.Employee">
+	<property name="id" value="101"></property>
+	<property name="name" value="Shiv"></property>
+	<property name="address" value="Nanded"></property>
+	</bean>
+
+</beans>

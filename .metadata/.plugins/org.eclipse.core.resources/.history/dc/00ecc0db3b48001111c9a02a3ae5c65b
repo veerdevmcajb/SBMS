@@ -1,0 +1,5 @@
+package in.veerdev.config;
+
+public class AppSecurity {
+
+}

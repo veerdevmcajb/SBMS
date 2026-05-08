@@ -1,0 +1,21 @@
+package in.veerdev.service;
+
+import org.springframework.stereotype.Service;
+
+import in.veerdev.dao.UserDao;
+
+@Service
+public class UserService {
+
+	private UserDao userDao;
+	
+	public UserService() {
+		System.out.println("UserService :: Constructor");
+	}
+	
+	public void getName() {
+		String nameById = userDao.getNameById(100);
+		System.out.println(nameById);
+		
+	}
+}
