@@ -1,5 +1,0 @@
-package com.in;
-
-public interface IEmailService {
-
-}

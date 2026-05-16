@@ -8,9 +8,7 @@
     <fullyQualifiedTypeName name="in.veerdev.service.UserService"/>
     <fullyQualifiedTypeName name="in.veerdev.config.AppConfig"/>
     <fullyQualifiedTypeName name="in.veerdev.config.AppSecurity"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
     <fullyQualifiedTypeName name="com.veerdev.dao.IUserDao"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="com.veerdev.service.UserService"/>
     <fullyQualifiedTypeName name="com.veerdev.config.AppConfig"/>
     <fullyQualifiedTypeName name="io.micrometer.observation.Observation.Context"/>
@@ -18,7 +16,6 @@
     <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotatedBeanDefinitionReader"/>
     <fullyQualifiedTypeName name="in.veerdev.beans.ShoppingCart"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator"/>
     <fullyQualifiedTypeName name="java.awt.desktop.AppReopenedListener"/>
     <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
@@ -37,10 +34,25 @@
     <fullyQualifiedTypeName name="org.springframework.jdbc.datasource.DriverManagerDataSource"/>
     <fullyQualifiedTypeName name="javax.sql.DataSource"/>
     <fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
     <fullyQualifiedTypeName name="com.mysql.cj.protocol.Resultset.Concurrency"/>
     <fullyQualifiedTypeName name="in.veerdev.dto.Student"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="com.example.dao.UserDao"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="com.example.service.UserService"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="com.example.entity.UserInfo"/>
+    <fullyQualifiedTypeName name="lombok.Setter"/>
+    <fullyQualifiedTypeName name="lombok.Getter"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
+    <fullyQualifiedTypeName name="com.example.repo.UserInfoRepository"/>
 </qualifiedTypeNameHistroy>

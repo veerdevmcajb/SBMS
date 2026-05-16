@@ -1,8 +1,0 @@
-package in.veerdev.beans;
-
-public class PwdUtils {
-
-	public PwdUtils() {
-		System.out.println("PwdUtils :: Constructor");
-	}
-}

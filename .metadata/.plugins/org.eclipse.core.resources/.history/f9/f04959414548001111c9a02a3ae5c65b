@@ -1,5 +1,0 @@
-package com.veerdev.dao;
-
-public class UserDaoImpl {
-
-}

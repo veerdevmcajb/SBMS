@@ -16,9 +16,9 @@ public class MainApp {
 		StudentDao bean = cotext.getBean(StudentDao.class);
 		
 		Student s = new Student();
-		s.setId(102);
-		s.setName("Natha");
-		s.setCity("Akola");
+		s.setId(103);
+		s.setName("Akash");
+		s.setCity("Satara");
 		
 		bean.save(s);
 		

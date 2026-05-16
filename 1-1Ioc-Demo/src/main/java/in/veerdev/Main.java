@@ -11,15 +11,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-//		ApplicationContext ctxt = new ClassPathXmlApplicationContext("Bean.xml");
-//		Employee bean = ctxt.getBean(Employee.class);
+		ApplicationContext ctxt = new ClassPathXmlApplicationContext("Bean.xml");
+		Employee bean = ctxt.getBean(Employee.class);
 	
-		Resource resource = new ClassPathResource("Bean.xml");
-		BeanFactory factory = new XmlBeanFactory(resource);
-		
-		Employee emp1 = (Employee)Factory.getBean(emp1);
-		
-		System.out.println("Employee1 " + emp1);
+//		Resource resource = new ClassPathResource("Bean.xml");
+//		BeanFactory factory = new XmlBeanFactory(resource);
+//		
+//		Employee emp1 = (Employee)Factory.getBean(emp1);
+//		
+//		System.out.println("Employee1 " + emp1);
 	}
 	
 }
