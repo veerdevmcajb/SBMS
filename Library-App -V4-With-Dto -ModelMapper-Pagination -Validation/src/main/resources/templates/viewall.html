@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{base::mybaselayout(~{::section})}">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<section>
+
+		<h2>View All Users</h2>
+
+		<div class="container mt-4">
+			<div class="row">
+				<div class="col-md-10 offset-1">
+
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">Name</th>
+								<th scope="col">Email</th>
+								<th scope="col">Address</th>
+								<th scope="col">Aadhar</th>
+								<th scope="col">Pan</th>
+								<th scope="col">Action</th>
+							</tr>
+						</thead>
+						<tbody>
+						
+						
+							<tr th:each="u:${userpages.content}">
+								
+								<td th:text="${u.name}"></td>
+								<td th:text="${u.email}"></td>
+								<td th:text="${u.address}"></td>
+								<td th:text="${u.aadhar}"></td>
+								<td th:text="${u.pan}"></td>
+								<td><a class="btn btn-warning" th:href="@{'/editUser/'+${u.id}}">Edit</a>
+								<a class="btn btn-danger" th:href="@{'/delete/'+${u.id}}">Delete</a></td>
+							</tr>
+							
+						</tbody>
+					</table>
+					
+					<!-- pagination starts -->
+					
+					<nav aria-label="Page navigation example">
+					  <ul class="pagination">
+					   
+					   <li class="page-item"><a class="page-link" th:href="@{'/allusers?pageNo='+${currentpage-1}}"
+								aria-label="Previous"> <span aria-hidden="true">&laquo;</span>
+							</a></li>
+					    
+					    
+					    <li class="page-item" th:each="i:${#numbers.sequence(0,userpages.totalPages-1)}">
+							<a class="page-link"  th:text=${i+1}  th:href="@{'/allusers?pageNo='+${i}}">1</a>
+							</li>
+							
+					    
+					    
+					    
+					   <li class="page-item" th:classappend="${!userpages.hasNext()}?'disabled'">
+							<a class="page-link" th:href="@{'/allusers?pageNo='+${currentpage+1}}"
+								aria-label="Next"> <span aria-hidden="true">&raquo;</span>
+							</a></li>
+							
+							
+					  </ul>
+					</nav>
+								
+					<!-- pagination ends --> 
+
+
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+</body>
+</html>

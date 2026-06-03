@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title></title>
+	</head>
+	<body>
+		
+		<!--<div th:replace="~{base::mynav}"></div>-->
+		<h1>Welcome...!</h1>
+		
+		<!--<span th:text="${msg}"></span>--> 
+		
+		<!--$is use for variable-->
+		
+		<!--<div th:object="${emp}">
+			<p th:text="*{name}"></p>
+			<p th:text="*{email}"></p>
+			<p th:text="*{role}"></p>
+			
+		</div>-->
+		
+		<a th:href="@{/register}">SignUp</a>
+		
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Role</th>
+				<th>MobNo</th>
+				<th>Action</th>
+			</tr>
+			
+			<tr th:each="e:${emp}">
+				<td th:text="${e.name}"></td>
+				<td th:text="${e.email}"></td>
+				<td th:text="${e.role}"></td>
+				<td th:text="${e.mob}"></td>
+				<td><button>View</button></td>
+				<td><button>delete</button></td>
+			</tr>
+		</table>
+		
+		<hr>
+		
+		<table>
+					<tr>
+						<th>SNo</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Role</th>
+						<th>MobNo</th>
+						<th>Action</th>
+					</tr>
+					
+					<tr th:each="e ,s :${emp}">
+						<td th:text="${s.count}"></td>
+						<td th:text="${e.name}"></td>
+						<td th:text="${e.email}"></td>
+						<td th:text="${e.role}"></td>
+						<td th:text="${e.mob}"></td>
+						<td><button>View</button></td>
+						<!--<td th:if="${e.role}=='Admin'"><button>delete</button></td>-->
+						<td th:unless="${e.role}=='Admin'"><button>delete</button></td>
+						
+						
+					</tr>
+				</table>
+				
+				<hr>
+		
+	</body>
+</html>

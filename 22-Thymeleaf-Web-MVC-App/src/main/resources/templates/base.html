@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div th:fragment="mynav">
+	<nav>
+			<ul>
+				<li><a th:href="@{/}">Home</a></li>
+				<li><a th:href="@{/aboutus}">AboutUs</a></li>
+				<li><a th:href="@{/contactus}">ContactUs</a></li>
+				<li><a th:href="@{/product}">Product</a></li>
+			</ul>
+		</nav>
+</div>
+
+</body>
+</html>
