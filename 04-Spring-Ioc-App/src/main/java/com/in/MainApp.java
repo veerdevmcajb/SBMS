@@ -12,6 +12,7 @@ public class MainApp {
 		UserService userService = ctxt.getBean(UserService.class);
 		
 		userService.register("Veer", "veer@gmail.com", 1234567l);
+		
 	}
 
 }

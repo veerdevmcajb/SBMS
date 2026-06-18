@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
     <typeInfo handle="=08-Spring-AutoWiring/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.veerdev.beans{IPayment.java[IPayment" modifiers="513" timestamp="1777975083299"/>
+    <typeInfo handle="=irctc-App/C:\/Users\/Admin\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/4.0.5\/spring-data-jpa-4.0.5.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/4.0.5=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1778736364828"/>
 </typeInfoHistroy>

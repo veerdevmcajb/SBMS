@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{base::mybaselayout(~{::section})}" >
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<section>
+
+<div class="container mt-5">
+
+<h2 class ="text-center">Place FInder</h2>
+
+<form th:action="@{/search}" th:object="requestdto" method="post">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Country code</label>
+    <input type="text" th:field="{country}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Zip code/ pin code</label>
+    <input type="text" th:field="{zipcode}" class="form-control" id="exampleInputPassword1">
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Submit</button>
+  
+</form>
+
+<!-- zip code table -->
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+</section>
+</body>
+</html>
