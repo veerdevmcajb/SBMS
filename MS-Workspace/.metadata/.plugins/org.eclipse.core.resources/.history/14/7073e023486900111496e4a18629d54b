@@ -1,0 +1,19 @@
+package com.example.service;
+
+
+
+import com.example.dto.EmployeeDto;
+import com.example.dto.ResponseDto;
+
+public interface EmployeeService {
+
+	EmployeeDto saveEmployee(EmployeeDto employeedto);
+
+
+
+	ResponseDto getEmpWithDept(Integer id);
+
+	EmployeeDto getEmployeeByid(Integer id);
+
+	
+}

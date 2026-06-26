@@ -1,0 +1,20 @@
+package com.example.service;
+
+import java.util.List;
+
+import com.example.dto.DepartmentDto;
+import com.example.dto.EmployeeDto;
+import com.example.dto.ResponseDto;
+
+public interface EmployeeService {
+
+	EmployeeDto saveEmployee(EmployeeDto employeedto);
+
+	EmployeeDto getEmpInfo(String name);
+
+	List<DepartmentDto> getDeptByName(String name);
+
+	ResponseDto findInfo(String name);
+
+	
+}

@@ -1,0 +1,3 @@
+spring.application.name=service-registery
+
+server.port=8761

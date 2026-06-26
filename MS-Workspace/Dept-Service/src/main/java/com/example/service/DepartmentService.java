@@ -1,0 +1,17 @@
+package com.example.service;
+
+import java.util.List;
+
+import com.example.dto.DepartmentDto;
+
+public interface DepartmentService {
+
+	DepartmentDto saveDept(DepartmentDto departmentdto);
+
+	List<DepartmentDto> getDepartmentByName(String name);
+
+	DepartmentDto getDept(String code);
+
+	
+	
+}

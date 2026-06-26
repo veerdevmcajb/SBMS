@@ -1,0 +1,60 @@
+package com.example.serviceImpl;
+
+import java.util.List;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.dto.DepartmentDto;
+import com.example.entity.Department;
+import com.example.repo.DepartmentRepo;
+import com.example.service.DepartmentService;
+
+@Service
+public class DepartmentServiceImpl implements DepartmentService{
+	
+	@Autowired
+	private DepartmentRepo repo;
+
+	@Autowired
+	private ModelMapper mapper;
+	
+	
+	@Override
+	public DepartmentDto saveDept(DepartmentDto departmentdto) {
+		
+		// convert dto to entity
+		Department entity = mapper.map(departmentdto, Department.class);
+		
+		Department save = repo.save(entity);
+		
+		// convert entity to Dto
+		
+		DepartmentDto dept = mapper.map(save, DepartmentDto.class);
+		
+		return dept;
+	}
+	
+	
+	@Override
+	public List<DepartmentDto> getDepartmentByName(String name) {
+		 
+	List<Department>	found = repo.findDeptByDeptName(name);
+		
+		return found.stream()
+	            .map(dept -> mapper.map(dept, DepartmentDto.class))
+	            .toList();
+	}
+
+
+	@Override
+	public DepartmentDto getDept(String code) {
+		Department department = repo.findByDeptCode(code);
+		return mapper.map(department, DepartmentDto.class);
+	}
+	
+	
+	
+
+}

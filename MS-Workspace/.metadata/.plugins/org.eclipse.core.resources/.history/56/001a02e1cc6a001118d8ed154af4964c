@@ -1,0 +1,24 @@
+spring.application.name=Emp-Service
+
+#spring.datasource.url=jdbc:mysql://localhost:3306/servicecomm
+#spring.datasource.username=root
+#spring.datasource.password=root12
+#
+#spring.jpa.hibernate.ddl-auto=update
+#
+#spring.jpa.show-sql=true
+
+
+spring.config.import=optional:configserver:http://localhost:9999
+
+resilience4j.retry.instances.EMP-SERVICE.max-attempts=3
+resilience4j.retry.instances.EMP-SERVICE.retry-exceptions=feign.FeignException
+
+resilience4j.retry.instances.EMP-SERVICE.wait-duration=5s
+
+
+# for actuators
+
+management.endpoints.web.exposure.include=*
+
+management.endpoint.health.show-details=true

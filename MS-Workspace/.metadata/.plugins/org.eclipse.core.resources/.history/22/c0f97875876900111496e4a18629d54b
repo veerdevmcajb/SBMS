@@ -1,0 +1,19 @@
+{"properties": [
+  {
+    "name": "spring.cloude.gateway.routes[0].id",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.cloude.gateway.routes[0].id'"
+  },
+  {
+    "name": "spring.cloude.gateway.routes[0].predicates[0]",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.cloude.gateway.routes[0].predicates[0]'"
+  }
+]} "description": "A description for 'spring.cloude.gateway.routes[0].id'"
+  },
+  {
+    "name": "spring.cloude.gateway.routes[0].predicates[0]",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.cloude.gateway.routes[0].predicates[0]'"
+  }
+]}

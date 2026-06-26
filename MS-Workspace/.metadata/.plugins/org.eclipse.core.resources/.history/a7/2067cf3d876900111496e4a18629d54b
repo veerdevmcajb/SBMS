@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "spring.cloude.gateway.routes[0].id",
+  "type": "java.lang.String",
+  "description": "A description for 'spring.cloude.gateway.routes[0].id'"
+}]}

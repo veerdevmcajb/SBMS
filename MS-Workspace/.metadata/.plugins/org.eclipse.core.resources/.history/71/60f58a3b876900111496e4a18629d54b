@@ -1,0 +1,15 @@
+spring.application.name=Gateway-proj
+
+server.port=9090
+
+#routing configuration for employee service
+
+spring.cloud.gateway.routes[0].id=my-emp-service
+spring.cloud.gateway.routes[0].uri=lb://EMP-SERVICE
+spring.cloud.gateway.routes[0].predicates[0]=Path=/employee/**
+
+
+spring.cloud.gateway.routes[1].id=my-dept-service
+spring.cloud.gateway.routes[1].uri=lb://DEPT-SERVICE
+spring.cloud.gateway.routes[1].predicates[0]=Path=/department/**
+

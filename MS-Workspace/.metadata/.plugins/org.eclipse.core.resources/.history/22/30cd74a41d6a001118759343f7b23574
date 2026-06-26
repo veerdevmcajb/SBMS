@@ -1,0 +1,27 @@
+spring.application.name=Gateway-proj
+
+server.port=9090
+
+#eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+
+#routing configuration for employee service
+
+
+
+
+#spring.cloud.gateway.server.webmvc.routes[0].id=my-emp-service
+#spring.cloud.gateway.server.webmvc.routes[0].uri=lb://EMP-SERVICE
+#spring.cloud.gateway.server.webmvc.routes[0].predicates[0]=Path=/employee/**
+
+#spring.cloud.gateway.server.webmvc.routes[1].id=my-dept-service
+#spring.cloud.gateway.server.webmvc.routes[1].uri=lb://DEPT-SERVICE
+#spring.cloud.gateway.server.webmvc.routes[1].predicates[0]=Path=/department/**
+
+
+# for auto discovery the service.
+
+#spring.cloud.gateway.discover.location.enable=true;
+#spring.cloud.gateway.discover.location.lower-case-service-id=true
+
+spring.cloud.gateway.discovery.locator.enabled=true
+#spring.cloud.gateway.discovery.locator.lower-case-service-id=true

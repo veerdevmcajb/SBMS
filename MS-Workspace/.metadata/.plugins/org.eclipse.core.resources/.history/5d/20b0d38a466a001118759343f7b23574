@@ -1,0 +1,15 @@
+spring.application.name=Config-server
+
+spring.cloud.config.server.git.uri=https://github.com/veerdevmcajb/config-repo.git
+
+spring.cloud.config.server.git.clone-on-start=true
+
+spring.cloud.config.server.git.default-label=main
+
+server.port=9999
+
+spring.cloud.config.server.git.username=veerdevmcajb
+
+spring.cloud.config.server.git.password=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
+
+
