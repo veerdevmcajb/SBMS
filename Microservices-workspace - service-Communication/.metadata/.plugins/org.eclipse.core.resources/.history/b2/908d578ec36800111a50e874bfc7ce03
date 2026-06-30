@@ -1,0 +1,11 @@
+package com.example.service;
+
+import com.example.dto.DepartmentDto;
+
+public interface DepartmentService {
+
+	DepartmentDto saveDept(DepartmentDto departmentdto);
+
+	
+	
+}
